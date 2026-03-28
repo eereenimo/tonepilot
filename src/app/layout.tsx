@@ -1,37 +1,41 @@
-import React from "react";
+import type { Metadata } from 'next';
+import './globals.css';
+import { AppSidebar } from '@/components/layout/AppSidebar';
+import { TopNavbar } from '@/components/layout/TopNavbar';
+
+export const metadata: Metadata = {
+  title: 'TonePilot | AI Messaging Copilot',
+  description: 'Elevate your messaging with AI-driven tone intelligence.',
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <div className="flex h-screen w-full bg-gray-50">
-          {/* Sidebar Placeholder */}
-          <aside className="w-64 flex-shrink-0 border-r bg-white hidden md:block">
-            <div className="flex h-16 items-center border-b px-6">
-              <span className="font-semibold text-lg">TonePilot</span>
-            </div>
-            <nav className="p-4 space-y-2">
-              <div className="p-2 rounded hover:bg-gray-100 cursor-pointer text-sm font-medium">
-                New Analysis
-              </div>
-              <div className="p-2 rounded hover:bg-gray-100 cursor-pointer text-sm font-medium text-gray-600">
-                History
-              </div>
-            </nav>
-          </aside>
+    <html lang="en" className="h-full">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+      </head>
+      <body className="h-full overflow-hidden bg-[var(--surface)] text-[var(--text-primary)]">
+        <div className="flex h-screen w-full relative">
+          {/* ── Ambient Background Decoration ── */}
+          <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+            <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full bg-purple-400/8 blur-[140px]" />
+            <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-indigo-400/8 blur-[120px]" />
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:32px_32px]" />
+          </div>
 
-          <div className="flex flex-1 flex-col overflow-hidden">
-            {/* Top Navbar Placeholder */}
-            <header className="flex h-16 items-center justify-between border-b bg-white px-6">
-              <div className="md:hidden font-semibold text-lg">TonePilot</div>
-              <div className="hidden md:block" /> {/* Spacer */}
-              <div className="flex items-center gap-4">
-                <div className="h-8 w-8 rounded-full bg-gray-200"></div>
-              </div>
-            </header>
+          {/* ── Global Navigation ── */}
+          <AppSidebar />
 
-            {/* Main Content Area */}
-            <main className="flex-1 overflow-auto p-6">{children}</main>
+          {/* ── Main Workspace ── */}
+          <div className="relative z-10 flex flex-1 flex-col min-w-0 overflow-hidden">
+            <TopNavbar />
+            <main className="flex-1 overflow-y-auto scroll-smooth">
+              <div className="px-5 py-8 sm:px-8 lg:px-12 lg:py-10 min-h-full">
+                {children}
+              </div>
+            </main>
           </div>
         </div>
       </body>
