@@ -103,22 +103,22 @@ export default function AnalyzePage() {
     <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-2 duration-500">
       {/* Hero Header */}
       <div className="text-center pb-4">
-        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-3">
+        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-3">
           Elevate your{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">messaging.</span>
         </h1>
-        <p className="text-[15px] text-slate-500 dark:text-slate-400 max-w-lg mx-auto font-medium leading-relaxed">
+        <p className="text-[15px] text-slate-500 max-w-lg mx-auto font-medium leading-relaxed">
           Paste your draft or upload a screenshot, pick an identity, and let TonePilot do the heavy lifting.
         </p>
       </div>
 
       {/* Error Banner */}
       {error && (
-        <div className="flex items-start gap-3 px-5 py-4 bg-red-50 dark:bg-red-900/20 border border-red-200/80 dark:border-red-800/20 rounded-2xl text-[13px] animate-in fade-in slide-in-from-top-2 duration-300">
+        <div className="flex items-start gap-3 px-5 py-4 bg-red-50 border border-red-200/80 rounded-2xl text-[13px] animate-in fade-in slide-in-from-top-2 duration-300">
           <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
           <div>
-            <p className="font-bold text-red-800 dark:text-red-400 mb-0.5">Operation Failed</p>
-            <p className="text-red-600 dark:text-red-500 font-medium">{error}</p>
+            <p className="font-bold text-red-800 mb-0.5">Operation Failed</p>
+            <p className="text-red-600 font-medium">{error}</p>
           </div>
         </div>
       )}
@@ -145,7 +145,7 @@ export default function AnalyzePage() {
                 onChange={(e) => setInputText(e.target.value)}
                 disabled={isLoading}
                 placeholder="Paste your draft or describe a situation (e.g., 'How do I reply to this screenshot?')..."
-                className="w-full min-h-[160px] p-5 bg-slate-50/80 dark:bg-slate-900/50 border border-[var(--border)] rounded-xl focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-400/60 transition-all resize-y font-medium text-[15px] dark:text-slate-100 text-slate-900 placeholder:text-slate-400 disabled:opacity-60 disabled:resize-none outline-none leading-relaxed"
+                className="w-full min-h-[160px] p-5 bg-slate-50/80 border border-[var(--border)] rounded-xl focus:bg-white focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-400/60 transition-all resize-y font-medium text-[15px] text-slate-900 placeholder:text-slate-400 disabled:opacity-60 disabled:resize-none outline-none leading-relaxed"
               />
               
               {/* Image Input Trigger */}
@@ -161,7 +161,7 @@ export default function AnalyzePage() {
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
                   disabled={isLoading}
-                  className="p-2.5 rounded-xl bg-white dark:bg-slate-800 border border-[var(--border)] shadow-sm text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-200 dark:hover:border-indigo-800 transition-all active:scale-95"
+                  className="p-2.5 rounded-xl bg-white border border-[var(--border)] shadow-sm text-slate-500 hover:text-indigo-600 hover:border-indigo-200 transition-all active:scale-95"
                   title="Attach screenshot or photo"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -182,7 +182,7 @@ export default function AnalyzePage() {
                 />
                 <button
                   onClick={removeImage}
-                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                  className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
                 >
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -192,7 +192,7 @@ export default function AnalyzePage() {
             )}
           </div>
 
-          <div className="h-px bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800" />
+          <div className="h-px bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100" />
 
           {/* Tone */}
           <div className="space-y-4">
