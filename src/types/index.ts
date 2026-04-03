@@ -25,3 +25,11 @@ export interface StrategyOption {
 export interface AIResponsePayload {
   options: StrategyOption[];
 }
+
+export interface HistoryItem {
+  id: string;
+  originalText: string;
+  generatedText: string;
+  tone: string;
+  createdAt: number;
+}
