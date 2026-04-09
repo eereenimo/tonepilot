@@ -17,17 +17,18 @@ Whether you're writing emails, messages, or content, TonePilot ensures your word
 
 ---
 
-Screenshots
-🧾 Library Page
+## Screenshots
+
+- 🧾 Library Page
 <img width="1919" height="907" alt="Ekran görüntüsü 2026-04-09 113445" src="https://github.com/user-attachments/assets/eae42cbf-2ca6-4313-8a40-e2d3fc38c6bc" />
 
-✨ Analyze Page
+- ✨ Analyze Page
 <img width="1919" height="908" alt="Ekran görüntüsü 2026-04-09 113435" src="https://github.com/user-attachments/assets/138d5a5e-fedc-40ed-b6b3-32c74279abfc" />
 
 -
 -
 -
-💡 Why TonePilot?
+## 💡 Why TonePilot?
 
 Most tools generate text.
 
