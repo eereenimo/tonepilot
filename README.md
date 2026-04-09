@@ -17,14 +17,6 @@ Whether you're writing emails, messages, or content, TonePilot ensures your word
 
 ---
 
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/eereenimo/tonepilot.git
-cd tonepilot
-npm install
-npm run dev
-
 Screenshots
 🧾 Library Page
 <img width="1919" height="907" alt="Ekran görüntüsü 2026-04-09 113445" src="https://github.com/user-attachments/assets/eae42cbf-2ca6-4313-8a40-e2d3fc38c6bc" />
@@ -42,3 +34,15 @@ Most tools generate text.
 TonePilot understands HOW you want to sound.
 
 It is built for people who want their writing to match the right context, emotion, and intention — whether that means sounding more professional, friendly, persuasive, or casual.
+
+
+
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/eereenimo/tonepilot.git
+cd tonepilot
+npm install
+npm run dev
+
