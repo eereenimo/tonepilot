@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**🚀 TonePilot – AI Communication Assistant**
+✨ Transform Your Text. Elevate Your Tone.
 
-## Getting Started
+TonePilot is an AI-powered communication assistant that helps you rewrite, refine, and enhance your text with different tones — instantly.
 
-First, run the development server:
+Whether you're writing emails, messages, or content, TonePilot ensures your words hit the right emotion every time.
 
-```bash
+🏗️ Tech Stack
+⚛️ Next.js
+🎨 Tailwind CSS
+🧠 OpenAI API
+🟦 TypeScript
+
+**Installation**
+git clone https://github.com/eereenimo/tonepilot.git
+cd tonepilot
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Environment Variables**
+OPENAI_API_KEY=your_api_key_here
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**📸 Screenshots**
+<img width="1919" height="907" alt="Ekran görüntüsü 2026-04-09 113445" src="https://github.com/user-attachments/assets/eae42cbf-2ca6-4313-8a40-e2d3fc38c6bc" />
+<img width="1919" height="908" alt="Ekran görüntüsü 2026-04-09 113435" src="https://github.com/user-attachments/assets/138d5a5e-fedc-40ed-b6b3-32c74279abfc" />
 
-## Learn More
+**Why TonePilot?**
 
-To learn more about Next.js, take a look at the following resources:
+Most tools generate text.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+TonePilot understands HOW you want to sound.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Future Plans**
+🔊 Voice input
+🌍 Multi-language support
+📊 Analytics dashboard
+🤖 Custom tone training
 
-## Deploy on Vercel
+**Contributing**
+Pull requests are welcome. Feel free to open issues.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Made by**
+Eren Serdaroğlu
